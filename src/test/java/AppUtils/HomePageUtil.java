@@ -9,9 +9,7 @@ public class HomePageUtil extends BaseTest {
     public void navigateToSection(String title){
 
         //if cookies accept button is displayed then click it
-        if(commonUtils.isDisplayed(homePage.acceptBtn()))
-            getDriver().findElement(homePage.acceptBtn()).click();
-
+        WaitUtils.waitForElementToBeVisible(homePage.acceptBtn()).click();
 
         //Navigation
         getDriver().findElement(homePage.hamburgerMenu()).click();

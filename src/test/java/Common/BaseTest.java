@@ -7,6 +7,7 @@ import AppUtils.HomePageUtil;
 import PageObjects.OpinionsPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -17,6 +18,8 @@ public class BaseTest {
 
     //ThreadLocal Webdriver to help in Multi Threaded Execution
     protected static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+    protected static WebDriverWait webDriverWait;
 
 
     //Page Objects
@@ -51,8 +54,9 @@ public class BaseTest {
     @BeforeMethod
     public void setup() {
         driver.set(new ChromeDriver());
-        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         getDriver().manage().window().maximize();
+        webDriverWait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
     }
 
 

@@ -27,6 +27,7 @@ public class CommonUtils extends BaseTest {
     /** Check if a webElement is displayed on web page or not */
     public boolean isDisplayed(By locator){
 
+        WaitUtils.waitForPageLoad();
 
         try{
             return getDriver().findElement(locator).isDisplayed();
