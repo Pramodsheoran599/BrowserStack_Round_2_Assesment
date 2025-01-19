@@ -30,5 +30,7 @@ The framework follows the Page Object Model (POM) design pattern for scalability
   
 
 **Note : To Execute this project on browser stack you will need to do below things:**
+<br>
       1) Generate Access key for the Rapid Translate Multi Traduction and save it as the environment variable : RAPID_API_TRANSLATE_KEY
+ <br>
       2) Replace your browserstack username and accesskey in browserstack.yml file in root directory
