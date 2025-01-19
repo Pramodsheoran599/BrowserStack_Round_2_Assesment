@@ -55,7 +55,7 @@ public class BaseTest {
     public void setup() {
         driver.set(new ChromeDriver());
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        getDriver().manage().window().maximize();
+//        getDriver().manage().window().maximize();
         webDriverWait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
         getDriver().get("https://elpais.com/");
     }

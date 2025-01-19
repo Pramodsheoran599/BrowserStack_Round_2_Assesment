@@ -13,8 +13,6 @@ public class ElPaisHomePage {
     }
 
     public By acceptBtn(){
-        return By.xpath("//button/span[text() = 'Accept']");
+        return By.xpath("//button/span[text() = 'Accept'] | //a[text() = 'Accept and continue']");
     }
-
-
 }

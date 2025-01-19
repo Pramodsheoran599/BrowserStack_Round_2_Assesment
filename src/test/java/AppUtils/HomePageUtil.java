@@ -16,6 +16,6 @@ public class HomePageUtil extends BaseTest {
         getDriver().findElement(homePage.hamburgerMenu()).click();
         getDriver().findElement(homePage.hamburgerMenuItem(title)).click();
 
-        Assert.assertTrue(getDriver().getCurrentUrl().contains(title), "Failed to navigate to the "+ title +" Section");
+        Assert.assertTrue(commonUtils.isDisplayed(opinionsPage.opinionHeader()), "Failed to navigate to the "+ title +" Section");
     }
 }

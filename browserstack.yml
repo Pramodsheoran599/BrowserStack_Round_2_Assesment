@@ -19,10 +19,10 @@ platforms:
     browserName: Edge
     browserVersion: latest
 
-  - os: Windows
-    osVersion: 8
-    browserName: Opera
-    browserVersion: 12.16
+  - deviceName: Samsung Galaxy S24 Ultra
+    osVersion: 14.0
+    browserName: chrome
+    deviceOrientation: portrait
 
   - deviceName: iPhone 15 Pro Max
     osVersion: 17

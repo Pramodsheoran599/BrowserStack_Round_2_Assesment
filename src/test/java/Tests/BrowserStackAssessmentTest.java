@@ -9,7 +9,6 @@ import java.util.List;
 
 public class BrowserStackAssessmentTest extends BaseTest {
 
-
     @Test(groups = {"TC_01"}, priority = 1)
     //Task 1 : Verify the Language is Spanish
     public void verify_Language(){

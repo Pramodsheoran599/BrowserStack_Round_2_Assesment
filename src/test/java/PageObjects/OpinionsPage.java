@@ -15,5 +15,9 @@ public class OpinionsPage {
     public By articleImageBasedOnArticleIndex(int articleIndex){
         return By.xpath("(//article)["+ articleIndex +"]//img");
     }
+
+    public By opinionHeader() {
+        return By.xpath("//a[@title = 'Opinión']");
+    }
 }
 
