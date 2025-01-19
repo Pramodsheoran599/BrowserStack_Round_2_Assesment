@@ -9,6 +9,8 @@ import java.io.FileOutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 public class CommonUtils extends BaseTest {
@@ -21,16 +23,17 @@ public class CommonUtils extends BaseTest {
         String lang = htmlTag.getAttribute("lang");
 
         Assert.assertEquals(langCode, lang, "The webpage is not in desired Language.");
+        System.out.println("Verified that the Page language is in this format : " + langCode);
+
     }
 
 
     /** Check if a webElement is displayed on web page or not */
     public boolean isDisplayed(By locator){
 
-        WaitUtils.waitForPageLoad();
-
         try{
-            return getDriver().findElement(locator).isDisplayed();
+            WaitUtils.waitForElementToBeVisible(locator);
+            return true;
         }
         catch (Exception e){
             return false;
@@ -59,6 +62,40 @@ public class CommonUtils extends BaseTest {
         catch (Exception e){
 
             Assert.fail("Failed to Download Image" + e.getMessage());
+        }
+    }
+
+
+    /** Print Words that are Repeated more than twice in the given string */
+    public void printWordsRepeatedMoreThanTwice(String text) {
+
+        // Convert the sentence to lowercase and split into words
+        String[] words = text.toLowerCase().split("\\s+");
+
+        // Create a map to store word frequencies
+        Map<String, Integer> wordCount = new HashMap<>();
+
+        // Count the occurrences of each word
+        for (String word : words) {
+            wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
+        }
+
+        // Track if any word repeats more than twice
+        boolean hasRepeatingWords = false;
+
+        // Print words that appear more than twice
+        for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
+            if (entry.getValue() > 2) {
+                if (!hasRepeatingWords)
+                    hasRepeatingWords = true;
+
+                System.out.println(entry.getKey() + ": " + entry.getValue());
+            }
+        }
+
+        // If no words repeat more than twice
+        if (!hasRepeatingWords) {
+            System.out.println("No words repeat more than twice.");
         }
     }
 }

@@ -57,6 +57,7 @@ public class BaseTest {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         getDriver().manage().window().maximize();
         webDriverWait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
+        getDriver().get("https://elpais.com/");
     }
 
 

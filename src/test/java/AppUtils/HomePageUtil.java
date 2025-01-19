@@ -1,7 +1,6 @@
 package AppUtils;
 
 import Common.BaseTest;
-import CommonUtils.WaitUtils;
 import org.testng.Assert;
 
 public class HomePageUtil extends BaseTest {
@@ -10,7 +9,8 @@ public class HomePageUtil extends BaseTest {
     public void navigateToSection(String title){
 
         //if cookies accept button is displayed then click it
-        WaitUtils.waitForElementToBeVisible(homePage.acceptBtn()).click();
+        if(commonUtils.isDisplayed(homePage.acceptBtn()))
+            getDriver().findElement(homePage.acceptBtn()).click();
 
         //Navigation
         getDriver().findElement(homePage.hamburgerMenu()).click();

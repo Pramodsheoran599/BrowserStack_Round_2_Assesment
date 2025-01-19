@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Web Scraping Suite">
-    <test name="El Pais Opinion Test">
+
+<suite name="Web Scraping Suite" parallel="tests" thread-count="5">
+    <test name="Browserstack Assessment : El Pais Opinion Test">
         <classes>
-            <class name="tests.OpinionTest"/>
+            <class name="Tests.BrowserStackAssessmentTest"/>
         </classes>
     </test>
 </suite>

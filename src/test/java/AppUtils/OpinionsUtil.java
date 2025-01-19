@@ -45,6 +45,4 @@ public class OpinionsUtil extends BaseTest {
 
         return headers;
     }
-
-
 }
