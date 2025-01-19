@@ -1,10 +1,10 @@
-<h1>**Selenium Automation Framework 🧪💻**</h1>
+<h1>Selenium Automation Framework 🧪💻</h1>
 
-<h2>**Overview**</h2>
+<h2>Overview</h2>
 A modular Selenium framework built with Java, TestNG, and Maven, designed for cross-browser testing, web scraping, and API integration.
 The framework follows the Page Object Model (POM) design pattern for scalability and maintainability.
 
-<h3>**Task List**</h3>
+<h3>Task List</h3>
 
 1) Visit the website El País, a Spanish news outlet.
       - Ensure that the website's text is displayed in Spanish.
