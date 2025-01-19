@@ -27,3 +27,8 @@ The framework follows the Page Object Model (POM) design pattern for scalability
 5) Cross-Browser Testing:
       - Run the solution locally to verify functionality.
       - Once validated, execute the solution on BrowserStack across 5 parallel threads, testing across a combination of desktop and mobile browsers.
+  
+
+**Note : To Execute this project on browser stack you will need to do below things:**
+      1) Generate Access key for the Rapid Translate Multi Traduction and save it as the environment variable : RAPID_API_TRANSLATE_KEY
+      2) Replace your browserstack username and accesskey in browserstack.yml file in root directory
