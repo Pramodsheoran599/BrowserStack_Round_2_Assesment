@@ -16,9 +16,7 @@ The framework follows the Page Object Model (POM) design pattern for scalability
       - If available, download and save the cover image of each article to your local machine.
         
 3) Translate Article Headers:
-      - Use a translation API of your choice, such as:
-      - Google Translate API
-      - Rapid Translate Multi Traduction API
+      - Use a translation API of your choice, such as Google Translate API or Rapid Translate Multi Traduction API
       - Translate the title of each article to English.
       - Print the translated headers.
         
