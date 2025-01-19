@@ -1,4 +1,4 @@
-package AppUtils;
+package CommonUtils;
 
 import Common.BaseTest;
 import org.openqa.selenium.By;

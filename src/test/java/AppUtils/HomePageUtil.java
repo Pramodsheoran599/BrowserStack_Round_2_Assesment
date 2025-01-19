@@ -1,6 +1,7 @@
 package AppUtils;
 
 import Common.BaseTest;
+import CommonUtils.WaitUtils;
 import org.testng.Assert;
 
 public class HomePageUtil extends BaseTest {

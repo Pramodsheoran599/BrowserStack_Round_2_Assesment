@@ -2,7 +2,7 @@ package Common;
 
 import AppUtils.OpinionsUtil;
 import PageObjects.ElPaisHomePage;
-import AppUtils.CommonUtils;
+import CommonUtils.CommonUtils;
 import AppUtils.HomePageUtil;
 import PageObjects.OpinionsPage;
 import org.openqa.selenium.WebDriver;

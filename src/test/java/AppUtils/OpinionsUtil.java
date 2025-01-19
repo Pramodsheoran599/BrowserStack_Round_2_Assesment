@@ -3,6 +3,7 @@ package AppUtils;
 import Common.BaseTest;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class OpinionsUtil extends BaseTest {
@@ -31,4 +32,19 @@ public class OpinionsUtil extends BaseTest {
             }
         }
     }
+
+
+    /** Return the First Five Article headings from the page */
+    public List<String> getTopFiveHeadings(){
+
+        List<String> headers = new ArrayList<>();
+        List<WebElement> allHeaders = getDriver().findElements(opinionsPage.articleHeading());
+
+        for(int i = 0 ; i < 5 ; i++)
+            headers.add(allHeaders.get(i).getText());
+
+        return headers;
+    }
+
+
 }
