@@ -1,4 +1,4 @@
-<h1>Selenium Automation Framework 🧪💻</h1>
+<h1>Browserstack Assessment Round Test Project🧪💻</h1>
 
 <h2>Overview</h2>
 A modular Selenium framework built with Java, TestNG, and Maven, designed for cross-browser testing, web scraping, and API integration.
