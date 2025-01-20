@@ -1,7 +1,7 @@
-<h1>Browserstack Assessment Round Test Project🧪💻</h1>
+<h1>Browserstack Assessment Round Test🧪💻</h1>
 
 <h2>Overview</h2>
-A modular Selenium framework built with Java, TestNG, and Maven, designed for cross-browser testing, web scraping, and API integration.
+A modular Selenium framework built with Java, TestNG, and Maven, designed for cross-browser testing using Browserstack, web scraping, and API integration.
 The framework follows the Page Object Model (POM) design pattern for scalability and maintainability.
 
 <h3>Task List</h3>
